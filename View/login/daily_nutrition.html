@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>DAILY NUTRITION</title>
+		<meta name="author" content="sy" />
+		<!-- Date: 2013-09-08 -->
+		<!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+	<body background="#bfcc97">
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+
+					<!-- Be sure to leave the brand out there if you want it shown -->
+					<a class="brand" href="../home.php">Home</a>
+					<a class="brand" href="daily_nutrition.php">Daily Nutrition</a>
+					<a class="brand" href="body_status.php">Body Status</a>
+					<a class="brand" href="meal_list.php">Meal List</a>
+
+					<!-- Everything you want hidden at 940px or less, place within here -->
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav">
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Action<b class="caret"></b></a>
+								<ul class="dropdown-menu" >
+									<li>
+										<a href="#">About</a>
+									</li>
+									<li>
+										<a href="#">Change profile</a>
+									</li>
+									<li>
+										<a href="../../Controller/logout.php">Logout</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/jquery.js"></script>
+		<script src="../js/daily_nutrition_js.js"></script>
+		<table border="1" class="table table-hover table-condensed">
+			<caption>
+				This table shows the nutritions that you intook at specific data.
+			</caption>
+			<thead>
+				<tr>
+					<th>date</th>
+					<th>sugar</th>
+					<th>protein</th>
+					<th>fat</th>
+					<th>Vitamin A</th>
+					<th>Vitamin E</th>
+					<th>Vitamin C</th>
+					<th>folate</th>
+					<th>Vitamin B6</th>
+					<th>Vitamin B12</th>
+					<th>calcium</th>
+					<th>iron</th>
+					<th>potassium</th>
+					<th>zinc</th>
+					<th>magnesium</th>
+					<th>copper</th>
+					<th>phosphorus</th>
+					<th>sodium</th>
+					<th>manganese</th>
+					<th>selenium</th>
+					<th>cholesterol</th>
+					<th>fiber</th>
+					<th>energy</th>
+					<th>meal</th>
+				</tr>
+			</thead>
+			<input type="button" value="see chart" onclick="see_chart();" class="btn btn-info" />
+			&nbsp;&nbsp;&nbsp;&nbsp; <select name="element_for_chart" id="element_for_chart"></select>
+			<br/>
+			<br/>
+		</table>
+	</body>
+</html>
+
